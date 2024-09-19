@@ -12,6 +12,8 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
+require("../middleware/allowCors");
+
 // routes categories
 require("./routes/categories", verifyToken)(app);
 // routes login
