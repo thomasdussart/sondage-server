@@ -1,0 +1,26 @@
+{
+  "Mobilité": {
+    "premier": 4,
+    "deuxième": 0,
+    "troisième": 0,
+    "quatrième": 0
+  },
+  "Environnement": {
+    "premier": 0,
+    "deuxième": 4,
+    "troisième": 0,
+    "quatrième": 0
+  },
+  "Sport": {
+    "premier": 0,
+    "deuxième": 0,
+    "troisième": 0,
+    "quatrième": 4
+  },
+  "Culture": {
+    "premier": 0,
+    "deuxième": 0,
+    "troisième": 4,
+    "quatrième": 0
+  }
+}
