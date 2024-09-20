@@ -23,6 +23,6 @@ require("./routes/questions", verifyToken)(app);
 // routes users
 require("./routes/users", verifyToken)(app);
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server listening at http://localhost:${port}`);
+// });
