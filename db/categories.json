@@ -1,13 +1,13 @@
 {
   "Mobilité": {
-    "premier": 4,
+    "premier": 5,
     "deuxième": 0,
     "troisième": 0,
     "quatrième": 0
   },
   "Environnement": {
     "premier": 0,
-    "deuxième": 4,
+    "deuxième": 5,
     "troisième": 0,
     "quatrième": 0
   },
@@ -15,12 +15,12 @@
     "premier": 0,
     "deuxième": 0,
     "troisième": 0,
-    "quatrième": 4
+    "quatrième": 5
   },
   "Culture": {
     "premier": 0,
     "deuxième": 0,
-    "troisième": 4,
+    "troisième": 5,
     "quatrième": 0
   }
 }

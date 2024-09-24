@@ -1,34 +1,38 @@
 {
-  "Mobilité": {
-    "Organiser une journée de sensibilisation à la marche avec une balade urbaine éducative": 2,
-    "Organiser un atelier de fabrication de nichoirs pour oiseaux à placer dans les parcs locaux et la création de bombe à graines": 1,
-    "Organiser un \"Café réparation de vélos\" où les jeunes apprennent à réparer et entretenir des vélos": 1,
-    "Organiser des ateliers de création de panneaux et signalétiques créatives pour sensibiliser à la sécurité routière": 2,
-    "Organiser une journée de sensibilisation à la sécurité routière avec des ateliers interactifs ": 2,
-    "Un challenge \"1 semaine sans voiture\" entre amis ou écoles, avec un prix pour ceux qui tiennent le plus longtemps": 1
+  {
+    "category": "Mobilité",
+    "Organiser une journée de sensibilisation à la marche avec une balade urbaine éducative": 0,
+    "Organiser un atelier de fabrication de nichoirs pour oiseaux à placer dans les parcs locaux et la création de bombe à graines": 0,
+    "Organiser un \"Café réparation de vélos\" où les jeunes apprennent à réparer et entretenir des vélos": 0,
+    "Organiser des ateliers de création de panneaux et signalétiques créatives pour sensibiliser à la sécurité routière": 0,
+    "Organiser une journée de sensibilisation à la sécurité routière avec des ateliers interactifs ": 0,
+    "Un challenge \"1 semaine sans voiture\" entre amis ou écoles, avec un prix pour ceux qui tiennent le plus longtemps": 0
   },
-  "Environnement": {
-    "Organiser une journée de ramassage de déchets dans les rues de Hannut": 4,
-    "Créer un jardin communautaire avec des plantations locales": 3,
-    "Lancer un défi “nettoyage du quartier” avec récompenses pour le groupe qui ramasse le plus de déchets": 3,
-    "Organiser des ateliers de bricolage pour fabriquer des objets utiles à partir de matériaux recyclés": 2,
-    "Organiser une journée de troc de fournitures scolaires pour échanger des objets non utilisés": 4,
-    "Créer une boîte à livres verte où les élèves peuvent déposer et prendre des livres gratuitement, en valorisant le recyclage de livres": 2
+  { 
+    "category": "Environnement",
+    "Organiser une journée de ramassage de déchets dans les rues de Hannut": 0,
+    "Créer un jardin communautaire avec des plantations locales": 0,
+    "Lancer un défi “nettoyage du quartier” avec récompenses pour le groupe qui ramasse le plus de déchets": 0,
+    "Organiser des ateliers de bricolage pour fabriquer des objets utiles à partir de matériaux recyclés": 0,
+    "Organiser une journée de troc de fournitures scolaires pour échanger des objets non utilisés": 0,
+    "Créer une boîte à livres verte où les élèves peuvent déposer et prendre des livres gratuitement, en valorisant le recyclage de livres": 0
   },
-  "Sport": {
-    "Créer un parcours de santé urbain en ville avec des défis sportifs": 2,
-    "Lancer une session hebdomadaire de sport en plein air dans un parc": 2,
-    "Mettre en place un circuit d'initiation au parkour dans un parc local": 2,
-    "Organiser une journée d'initiation à des sports moins connus, comme le frisbee ou le tir à l'arc": 2,
-    "Créer un \"défi sportif\" mensuel (course, marche, vélo) avec des objectifs à atteindre par école": 3,
-    "Lancer un tournoi sportif type intervilles entre les écoles": 2
+  {
+    "category": "Sport",
+    "Créer un parcours de santé urbain en ville avec des défis sportifs": 0,
+    "Lancer une session hebdomadaire de sport en plein air dans un parc": 0,
+    "Mettre en place un circuit d'initiation au parkour dans un parc local": 0,
+    "Organiser une journée d'initiation à des sports moins connus, comme le frisbee ou le tir à l'arc": 0,
+    "Créer un \"défi sportif\" mensuel (course, marche, vélo) avec des objectifs à atteindre par école": 0,
+    "Lancer un tournoi sportif type intervilles entre les écoles": 0
   },
-  "Culture": {
-    "Créer un mini-festival de musique de rue avec des jeunes artistes locaux": 3,
+ {
+    "category": "Culture",
+    "Créer un mini-festival de musique de rue avec des jeunes artistes locaux": 0,
     "Lancer un atelier de création de fresques murales dans le centre-ville": 0,
-    "Organiser une soirée cinéma de plein air avec des films choisis par les jeunes": 3,
+    "Organiser une soirée cinéma de plein air avec des films choisis par les jeunes": 0,
     "Mettre en place une scène ouverte lors de la fin des examens pour des performances artistiques locales": 0,
-    "Organiser un concours de photographie autour de Hannut avec une exposition en plein air": 3,
+    "Organiser un concours de photographie autour de Hannut avec une exposition en plein air": 0,
     "Lancer des ateliers d'écriture pour créer un recueil d'expression des jeunes ?": 0
   }
 }
