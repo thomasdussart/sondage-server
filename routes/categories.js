@@ -1,105 +1,22 @@
 const express = require("express");
 const app = express();
-const fs = require("fs");
-const path = require("path");
+
 const Category = require("../models/categories.model");
 app.use(express.json());
 
-const jsonFilePath = path.join(__dirname, "../db/categories.json");
-
 module.exports = function (app) {
-  app.get("/data", (req, res) => {
-    fs.readFile(jsonFilePath, "utf-8", (err, data) => {
-      if (err) {
-        console.error("Erreur lors de la lecture du fichier JSON:", err);
-        return res.status(500).send("Erreur serveur");
-      }
-
-      res.send(data);
-    });
-  });
-
-  app.post("/test", async (req, res) => {
+  app.get("/data", async (req, res) => {
     try {
-      const testCategory = new Category({
-        name: "Test",
-        premier: 0,
-        deuxieme: 0,
-        troisieme: 0,
-        quatrieme: 0,
-      });
-      await testCategory.save();
-      console.log("Test category saved.");
-      res.status(200).send("Test category saved.");
+      // Use Mongoose's find() method to fetch data
+      const data = await Category.find(); // This automatically returns an array of documents
+
+      // Send the data as JSON
+      res.json(data);
     } catch (error) {
-      console.error("Error saving test category:", error);
-      res.status(500).send("Test save failed.");
+      console.error("Error fetching data:", error);
+      res.status(500).send("Error fetching data");
     }
   });
-  // app.post("/data", (req, res) => {
-  //   const clickOrderArray = JSON.parse(req.body.clickOrder);
-
-  //   // Lire le fichier JSON existant
-  //   fs.readFile(jsonFilePath, "utf-8", (err, data) => {
-  //     if (err) {
-  //       console.error("Erreur lors de la lecture du fichier JSON:", err);
-  //       return;
-  //     }
-
-  //     // Parser les données JSON existantes
-  //     let categoryData;
-  //     try {
-  //       categoryData = JSON.parse(data);
-  //     } catch (parseError) {
-  //       console.error("Erreur lors du parsing des données JSON:", parseError);
-  //       return;
-  //     }
-
-  //     // Parcourir l'ordre des clics et mettre à jour les compteurs
-  //     clickOrderArray.forEach((categoryName, index) => {
-  //       const position = index + 1; // La position (1 = premier, 2 = deuxième, etc.)
-
-  //       // Créer l'entrée pour la catégorie si elle n'existe pas
-  //       if (!categoryData[categoryName]) {
-  //         categoryData[categoryName] = {
-  //           premier: 0,
-  //           deuxième: 0,
-  //           troisième: 0,
-  //           quatrième: 0,
-  //         };
-  //       }
-
-  //       // Incrémenter le bon compteur en fonction de la position
-  //       switch (position) {
-  //         case 1:
-  //           categoryData[categoryName].premier++;
-  //           break;
-  //         case 2:
-  //           categoryData[categoryName].deuxième++;
-  //           break;
-  //         case 3:
-  //           categoryData[categoryName].troisième++;
-  //           break;
-  //         case 4:
-  //           categoryData[categoryName].quatrième++;
-  //           break;
-  //       }
-  //     });
-
-  //     // Écrire à nouveau dans le fichier JSON avec les données mises à jour
-  //     fs.writeFile(
-  //       jsonFilePath,
-  //       JSON.stringify(categoryData, null, 2),
-  //       (err) => {
-  //         if (err) {
-  //           console.error("Erreur lors de l'écriture du fichier JSON:", err);
-  //         } else {
-  //           console.log("Les données ont été mises à jour avec succès.");
-  //         }
-  //       }
-  //     );
-  //   });
-  // });
 
   app.post("/data", async (req, res) => {
     const clickOrderArray = req.body.clickOrder; // Array of categories in click order
